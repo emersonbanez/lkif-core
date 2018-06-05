@@ -1,43 +1,97 @@
 <?xml version="1.0"?>
-<rdf:RDF
-    xmlns:modification="http://www.estrellaproject.org/lkif-core/time-modification.owl#"
-    xmlns:norm="http://www.estrellaproject.org/lkif-core/norm.owl#"
-    xmlns:laction="http://www.estrellaproject.org/lkif-core/legal-action.owl#"
-    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-    xmlns="http://www.estrellaproject.org/lkif-core/lkif-core.owl#"
-    xmlns:owl="http://www.w3.org/2002/07/owl#"
-    xmlns:rules="http://www.estrellaproject.org/lkif-core/lkif-rules.owl#"
-    xmlns:lrole="http://www.estrellaproject.org/lkif-core/legal-role.owl#"
-  xml:base="http://www.estrellaproject.org/lkif-core/lkif-core.owl">
-  <owl:Ontology rdf:about="">
-    <owl:imports rdf:resource="http://www.estrellaproject.org/lkif-core/legal-role.owl"/>
-    <owl:imports rdf:resource="http://www.estrellaproject.org/lkif-core/norm.owl"/>
-    <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >
+<rdf:RDF xmlns="http://www.estrellaproject.org/lkif-core/lkif-core.owl#"
+     xml:base="http://www.estrellaproject.org/lkif-core/lkif-core.owl"
+     xmlns:laction="http://www.estrellaproject.org/lkif-core/legal-action.owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:lrole="http://www.estrellaproject.org/lkif-core/legal-role.owl#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rules="http://www.estrellaproject.org/lkif-core/lkif-rules.owl#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:modification="http://www.estrellaproject.org/lkif-core/time-modification.owl#"
+     xmlns:norm="http://www.estrellaproject.org/lkif-core/norm.owl#">
+    <owl:Ontology rdf:about="http://www.estrellaproject.org/lkif-core/lkif-core.owl">
+        <owl:imports rdf:resource="http://www.estrellaproject.org/lkif-core/legal-role.owl"/>
+        <owl:imports rdf:resource="http://www.estrellaproject.org/lkif-core/norm.owl"/>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+The LKIF-Core ontology, version 1.0, is part of Deliverable 1.4 of the European project for Standardised Transparent Representations in order to Extend Legal Accessibility (ESTRELLA, IST-2004-027665), http://www.estrellaproject.org
+
+The use of this ontology, and the OWL files through which it is distributed, is covered by the GNU Lesser General Public License (LGPL), version 2.1 (http://www.gnu.org/copyleft/lesser.html) in as far as the copyright is not covered by additional restrictions of the ESTRELLA consortium agreement (info@estrellaproject.org). The LGPL license places copyright restrictions on the ontology itself but does not apply these restrictions to software that merely links with concepts defined in the ontology library. Please read the license restrictions before using this work. 
+
+</owl:versionInfo>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+This module is part of LKIF-Core, version 1.0.3, part of Deliverable 1.4 of ESTRELLA, IST-2004-027665
+</owl:versionInfo>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
 Partner contributions from the University of Amsterdam (UvA), the University of Bologna (UNIBO) and the Fraunhofer institute (FOKUS)
 
 Editor:       Rinke Hoekstra (UvA)
 Authors:      Rinke Hoekstra (UvA), Alexander Boer (UvA), Kasper van den Berg (UvA)
 Contributors: Joost Breuker (UvA), Thomas Gordon (FOKUS), Monica Palmirani (UNIBO), Rosella Rubino (UNIBO)
 </owl:versionInfo>
-    <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >
-The LKIF-Core ontology, version 1.0, is part of Deliverable 1.4 of the European project for Standardised Transparent Representations in order to Extend Legal Accessibility (ESTRELLA, IST-2004-027665), http://www.estrellaproject.org
-
-The use of this ontology, and the OWL files through which it is distributed, is covered by the GNU Lesser General Public License (LGPL), version 2.1 (http://www.gnu.org/copyleft/lesser.html) in as far as the copyright is not covered by additional restrictions of the ESTRELLA consortium agreement (info@estrellaproject.org). The LGPL license places copyright restrictions on the ontology itself but does not apply these restrictions to software that merely links with concepts defined in the ontology library. Please read the license restrictions before using this work. 
-
-</owl:versionInfo>
-    <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
 LKIF-Core, version 1.1, copyright (C) 2007, the ESTRELLA consortium
 </owl:versionInfo>
-    <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >
-This module is part of LKIF-Core, version 1.0.3, part of Deliverable 1.4 of ESTRELLA, IST-2004-027665
-</owl:versionInfo>
-  </owl:Ontology>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.estrellaproject.org/lkif-core/lkif-core.owl#Delict -->
+
+    <owl:Class rdf:about="http://www.estrellaproject.org/lkif-core/lkif-core.owl#Delict">
+        <rdfs:subClassOf rdf:resource="http://www.estrellaproject.org/lkif-core/lkif-core.owl#Philippine_Legal_Concepts"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.estrellaproject.org/lkif-core/lkif-core.owl#Philippine_Legal_Concepts -->
+
+    <owl:Class rdf:about="http://www.estrellaproject.org/lkif-core/lkif-core.owl#Philippine_Legal_Concepts"/>
+    
+
+
+    <!-- http://www.estrellaproject.org/lkif-core/lkif-core.owl#Quasi-Delict -->
+
+    <owl:Class rdf:about="http://www.estrellaproject.org/lkif-core/lkif-core.owl#Quasi-Delict">
+        <rdfs:subClassOf rdf:resource="http://www.estrellaproject.org/lkif-core/lkif-core.owl#Philippine_Legal_Concepts"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.estrellaproject.org/lkif-core/lkif-core.owl#Roman_Delict -->
+
+    <owl:Class rdf:about="http://www.estrellaproject.org/lkif-core/lkif-core.owl#Roman_Delict">
+        <rdfs:subClassOf rdf:resource="http://www.estrellaproject.org/lkif-core/lkif-core.owl#Roman_Legal_Concepts"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.estrellaproject.org/lkif-core/lkif-core.owl#Roman_Legal_Concepts -->
+
+    <owl:Class rdf:about="http://www.estrellaproject.org/lkif-core/lkif-core.owl#Roman_Legal_Concepts"/>
+    
+
+
+    <!-- http://www.estrellaproject.org/lkif-core/lkif-core.owl#Roman_Quasi-Delict -->
+
+    <owl:Class rdf:about="http://www.estrellaproject.org/lkif-core/lkif-core.owl#Roman_Quasi-Delict">
+        <rdfs:subClassOf rdf:resource="http://www.estrellaproject.org/lkif-core/lkif-core.owl#Roman_Legal_Concepts"/>
+    </owl:Class>
 </rdf:RDF>
 
-<!-- Created with TopBraid Composer -->
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
